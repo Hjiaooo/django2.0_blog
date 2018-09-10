@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{# 页面标题 #}
+{% block title %}
+    我的网站|首页
+{% endblock %}
+
+{# 引入CSS样式 #}
+{% block header_extend %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+
+{# 页面内容 #}
+{% block content %}
+    <h3 class="home-context">欢迎访问我的网站</h3>
+
+{% endblock %}
